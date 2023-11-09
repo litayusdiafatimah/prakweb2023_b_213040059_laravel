@@ -19,12 +19,14 @@ use App\Models\User;
 Route::get('/', function () {
     return view ('home', [
         "title" => "Home",
+        "active" => "home",
     ]);
 });
 
 Route::get('/about', function () {
     return view('about', [
         "title" => "About",
+        "active" => "about",
         "name" => "Lita Yusdia Fatimah",
         "email" => "lita.213040059@mail.unpas.ac.id",
         "image" => "Litayf.jpg"
@@ -42,18 +44,5 @@ Route::get('/categories', function() {
     ]);
 });
 
-Route::get('/categories/{category:slug}', function(Category $category) {
-    return view('posts', [
-        'title' => "Post By Category : $category->name",
-        'active' => 'categories',
-        'posts' => $category->posts->load('category', 'author')
-    ]);
-});
 
-Route::get('/authors/{author:username}', function(User $author) {
-    return view('posts', [
-        'title' => "Post By Author : $author->name",
-        'active' => 'categories',
-        'posts' => $author->posts->load('category', 'author')
-    ]);
-});
+
