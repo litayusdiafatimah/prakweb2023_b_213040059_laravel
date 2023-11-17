@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Nov 09, 2023 at 02:15 PM
+-- Generation Time: Nov 17, 2023 at 06:56 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -185,7 +185,8 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `name`, `username`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
 (1, 'Cindy Maria Haryanti', 'budiman.endra', 'michelle15@example.net', '2023-11-08 02:53:42', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'W3iupt61fq', '2023-11-08 02:53:42', '2023-11-08 02:53:42'),
 (2, 'Prima Sabri Hardiansyah', 'gilda.sudiati', 'usamah.rahmi@example.net', '2023-11-08 02:53:42', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', '43wzfL4efi', '2023-11-08 02:53:42', '2023-11-08 02:53:42'),
-(3, 'Pangestu Hutasoit', 'tantri.mangunsong', 'anggraini.zelaya@example.net', '2023-11-08 02:53:42', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'WUDe9Qa8g3', '2023-11-08 02:53:42', '2023-11-08 02:53:42');
+(3, 'Pangestu Hutasoit', 'tantri.mangunsong', 'anggraini.zelaya@example.net', '2023-11-08 02:53:42', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'WUDe9Qa8g3', '2023-11-08 02:53:42', '2023-11-08 02:53:42'),
+(7, 'Lita Yusdia Fatimah', 'litaysdf', 'litayusdia@gmail.com', NULL, '$2y$10$zx8DO9FFX05kwaLnI9urLehagHgSrIeFt/vud7/3bDDgdJwmpYGOC', NULL, '2023-11-16 23:54:46', '2023-11-16 23:54:46');
 
 --
 -- Indexes for dumped tables
@@ -279,7 +280,7 @@ ALTER TABLE `posts`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
