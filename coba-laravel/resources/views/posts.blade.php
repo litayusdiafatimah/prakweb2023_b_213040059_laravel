@@ -54,7 +54,7 @@
             <p>
                 <small class="text-muted">
                 By. <a href="/blog?author={{ $post->author->username }} " 
-                class="text-decoration-none"> {{ $post->author->name }}</a>{{ $post
+                class="text-decoration-none"> {{ $post->author->name }}</a> {{ $post
                 ->created_at->diffForHumans() }}
                 </small>
             </p> 
