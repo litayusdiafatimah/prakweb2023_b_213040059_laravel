@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Nov 25, 2023 at 07:47 AM
+-- Generation Time: Nov 25, 2023 at 12:44 PM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -160,8 +160,7 @@ INSERT INTO `posts` (`id`, `category_id`, `user_id`, `title`, `slug`, `image`, `
 (18, 1, 2, 'Sed dolore blanditiis fugit voluptates quo.', 'est-voluptate-qui-odit-molestiae-et', NULL, 'Rerum quia minus odit eaque. Mollitia qui cumque recusandae nemo non voluptatem sit. Dolorum alias ut aliquam ratione. Ad sapiente quibusdam qui reiciendis sit facilis et.', '<p>Aut voluptas omnis explicabo aut ut enim sint nemo. Rem molestiae dolor ullam modi quisquam suscipit. Quisquam illum libero rerum expedita mollitia atque quos dolorum.</p><p>Ut eos et est excepturi voluptatibus reiciendis. Placeat asperiores qui explicabo aut sunt voluptatum accusantium. Et in dolor a repellat. Sed aspernatur iure cupiditate et ad.</p><p>Architecto fuga velit quasi voluptate aut modi iste. Beatae esse aut et quos voluptatem quia non.</p><p>Et eius qui atque sequi et atque. Vero dolor iure ut deleniti est numquam occaecati. Totam enim tempore doloremque rerum minima blanditiis exercitationem ab. Quo sit culpa rerum rerum repellat. Voluptatum amet accusamus minus sed culpa nostrum.</p><p>Necessitatibus totam id dignissimos sed quia. Voluptates illo et dignissimos tempora facere. Beatae ut velit laudantium maiores eum eum. Temporibus ipsum quis autem nam reiciendis sit iure.</p><p>Quas omnis voluptas deleniti commodi voluptatibus voluptatem qui. Molestias et nobis quo voluptatem fugiat id praesentium. Placeat deleniti illo velit alias.</p><p>Ducimus saepe ducimus unde ex rerum et. Animi incidunt deleniti error quia esse at.</p>', NULL, '2023-11-24 23:53:07', '2023-11-24 23:53:07'),
 (19, 1, 3, 'Tempora consequatur ea sed qui saepe fuga eum ut quisquam.', 'iure-nobis-sed-omnis', NULL, 'Quo maxime eaque hic odit. Sed voluptas numquam et possimus voluptatem. Consectetur unde et vel soluta aspernatur sed quisquam.', '<p>Dolores cum praesentium nesciunt dolorum dolore eaque. Nesciunt dolorem molestiae placeat rerum magnam molestiae. Sint labore aut sint sit aut sunt.</p><p>Harum esse est excepturi sit ipsa. Voluptatem aperiam quis velit sint vero enim atque. Fugit nemo quidem minus rerum corrupti iure veniam. Iure dicta et aperiam numquam qui aut fugiat.</p><p>Consequuntur illum perferendis et est excepturi non id. Voluptatibus tenetur autem consequatur saepe voluptate. Pariatur id iusto perferendis suscipit.</p><p>Quia ipsum odit sunt eos nobis ipsum. Quos repellendus rem laudantium nihil totam repudiandae. Aut cumque est facilis est nemo sit.</p><p>Natus commodi aut saepe aliquid repellendus. Molestiae cumque et cum consequuntur vero suscipit nihil. Nulla dolor voluptatum adipisci accusantium laborum ad. Neque ipsam beatae eius eius quae. Eum eius tempora dolorem fuga in.</p>', NULL, '2023-11-24 23:53:07', '2023-11-24 23:53:07'),
 (20, 2, 3, 'Non nesciunt odio fugit ad est neque harum impedit.', 'minus-nemo-qui-vel-voluptatum-magnam', NULL, 'Asperiores id impedit sunt et qui officia est. Minus itaque quisquam et quo. Repellendus repudiandae reiciendis molestias provident qui excepturi consequuntur.', '<p>Qui reiciendis quisquam atque enim est molestiae enim. Enim est dolor quisquam perferendis repudiandae. Qui animi non consequatur vel neque. Ducimus iste et ad.</p><p>Dolores nesciunt saepe aperiam error. Non molestias aut ullam totam placeat possimus vitae ut. Mollitia amet eligendi saepe aut officia esse voluptatem. Repudiandae nobis non consectetur quia accusantium. Quis nisi aliquam veritatis quo aliquid.</p><p>Qui officia natus eum. Hic eaque neque excepturi tempora. Natus sed impedit veniam sed aliquam odit magnam. Aut enim quisquam et modi.</p><p>Hic consequuntur corporis commodi saepe incidunt alias. Dolore dolor voluptatem odio sint quia velit. Dolorum blanditiis est reprehenderit cumque ad quas. Vel quia consequuntur inventore. Dolores sit nihil modi ut praesentium adipisci odit.</p><p>Fuga ea excepturi et assumenda omnis. Incidunt repellendus commodi qui eum fuga. Consequatur tempora sequi rem aspernatur rerum consequuntur.</p>', NULL, '2023-11-24 23:53:07', '2023-11-24 23:53:07'),
-(21, 2, 1, 'Post Baru', 'post-baru', 'post-images/CSwycxB7lRM4LGfXlP33DNbpIeQ0g9AQo1u5rb4Q.jpg', 'Post Baru', '<div>Post Baru</div>', NULL, '2023-11-25 00:12:30', '2023-11-25 00:12:30'),
-(22, 1, 1, 'Post Baru Lagi', 'post-baru-lagi', 'post-images/M1eevM0N36FTUP4e1OwAS4xztfY28zeMZ3QM9OkW.jpg', 'post baru', '<div>post baru</div>', NULL, '2023-11-25 00:39:08', '2023-11-25 00:39:08');
+(21, 2, 1, 'Post Baru', 'post-baru', 'post-images/wikvSkRPdJVKerViaws1p6AwtD36NsvLX8L4sZ1s.jpg', 'Post Baru', '<div>Post Baru</div>', NULL, '2023-11-25 00:12:30', '2023-11-25 05:26:34');
 
 -- --------------------------------------------------------
 
@@ -277,7 +276,7 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT for table `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `users`
