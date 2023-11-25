@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Nov 25, 2023 at 12:44 PM
+-- Generation Time: Nov 25, 2023 at 04:58 PM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -82,7 +82,8 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (3, '2019_08_19_000000_create_failed_jobs_table', 1),
 (4, '2019_12_14_000001_create_personal_access_tokens_table', 1),
 (5, '2023_11_04_041928_create_posts_table', 1),
-(6, '2023_11_04_082338_create_categories_table', 1);
+(6, '2023_11_04_082338_create_categories_table', 1),
+(7, '2023_11_25_164358_add_is_admin_to_users_table', 2);
 
 -- --------------------------------------------------------
 
@@ -177,18 +178,19 @@ CREATE TABLE `users` (
   `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `is_admin` tinyint(1) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `username`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Lita Yusdia Fatimah', 'litayusdia', 'litayusdiaf@gmail.com', NULL, '$2y$10$69A7NWmfXkbjiFVlENxekuFCnNjQQo6K24nLFoOZ0Nb063bE.0kUW', NULL, '2023-11-24 23:52:59', '2023-11-24 23:52:59'),
-(2, 'Ghaliyati Puspa Mulyani S.Gz', 'gmegantara', 'caket31@example.com', '2023-11-24 23:53:05', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'M3Sei5lrbq', '2023-11-24 23:53:05', '2023-11-24 23:53:05'),
-(3, 'Bakiman Ardianto S.E.I', 'hasim93', 'clara.anggriawan@example.net', '2023-11-24 23:53:05', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'yCSe8TY4UH', '2023-11-24 23:53:05', '2023-11-24 23:53:05'),
-(4, 'Kasiyah Yuliarti', 'anastasia56', 'dimas50@example.net', '2023-11-24 23:53:05', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'G7Jt9h0VPx', '2023-11-24 23:53:05', '2023-11-24 23:53:05');
+INSERT INTO `users` (`id`, `name`, `username`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `is_admin`) VALUES
+(1, 'Lita Yusdia Fatimah', 'litayusdia', 'litayusdiaf@gmail.com', NULL, '$2y$10$69A7NWmfXkbjiFVlENxekuFCnNjQQo6K24nLFoOZ0Nb063bE.0kUW', NULL, '2023-11-24 23:52:59', '2023-11-24 23:52:59', 1),
+(2, 'Ghaliyati Puspa Mulyani S.Gz', 'gmegantara', 'caket31@example.com', '2023-11-24 23:53:05', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'N3FdtpAjGPkRb2EcsjCYvgLoNAKa8OmZeKroatlcvy4tCIyBk3CFmpdYeaEm', '2023-11-24 23:53:05', '2023-11-24 23:53:05', 1),
+(3, 'Bakiman Ardianto S.E.I', 'hasim93', 'clara.anggriawan@example.net', '2023-11-24 23:53:05', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'dzzlIPUKS8EveG3WoQAiXeEo4vAUAeJTPzac3WV1GqXWpUETodKbc0I60QvN', '2023-11-24 23:53:05', '2023-11-24 23:53:05', 0),
+(4, 'Kasiyah Yuliarti', 'anastasia56', 'dimas50@example.net', '2023-11-24 23:53:05', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'G7Jt9h0VPx', '2023-11-24 23:53:05', '2023-11-24 23:53:05', 0);
 
 --
 -- Indexes for dumped tables
@@ -264,7 +266,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `personal_access_tokens`
